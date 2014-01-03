@@ -1,4 +1,33 @@
-command-line-snippets
-=====================
+# command-line-snippets
 
-A collection of useful command line snippets.
+The following is a collection of useful command line snippets that I use regularly.
+
+
+### PDF modification
+
+##### Merge multiple PDF files
+
+    gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=full.pdf page1.pdf page2.pdf page3.pdf
+    
+##### Trim PDF margins
+
+    pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
+
+    
+### Video
+
+##### Convert .ogv files to .avi files
+
+    mencoder movie.ogv -ovc xvid -oac mp3lame -xvidencopts pass=1 -o movie.avi
+
+
+### Miscellaneous
+
+#####  Send a command to a serial/USB port
+
+    echo -ne '\xaa\xbb\x06\x00\xff\xff\x06\x01\x64\x63' > /dev/ttyUSB0
+
+##### Sniff a serial/USB port
+
+    apt-get install jpnevulator
+    jpnevulator --ascii --timing-print --tty "/dev/ttyUSB0" --read
