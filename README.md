@@ -20,6 +20,10 @@ The following is a collection of useful command line snippets that I use regular
 
     mencoder movie.ogv -ovc xvid -oac mp3lame -xvidencopts pass=1 -o movie.avi
 
+##### Convert AVCHD (.mts) files to .avi files
+
+    ffmpeg -i movie.mts -vcodec libxvid -b 5000 -acodec libmp3lame -ac 2 -ab 192k -s 1280x720 movie.avi
+
 
 ### Miscellaneous
 
