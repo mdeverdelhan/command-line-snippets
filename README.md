@@ -24,6 +24,10 @@ The following is a collection of useful command line snippets that I use regular
 
     ffmpeg -i movie.mts -vcodec libxvid -b 5000 -acodec libmp3lame -ac 2 -ab 192k -s 1280x720 movie.avi
 
+##### Play a movie in ASCII art
+
+    mplayer -vo caca movie.avi
+
 
 ### Miscellaneous
 
