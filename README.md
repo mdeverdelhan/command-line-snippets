@@ -13,6 +13,12 @@ The following is a collection of useful command line snippets that I use regular
 
     pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
 
+### Software development
+
+#### Release with Maven
+
+    mvn clean release:prepare -Darguments=-Dgpg.passphrase="My\ passphrase"
+    mvn release:perform -Darguments=""
     
 ### Video
 
