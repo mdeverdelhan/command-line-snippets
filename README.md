@@ -18,8 +18,6 @@ The following is a collection of useful command line snippets that I use regular
 #### Release with Maven
 
     mvn clean
-    mvn javadoc:jar
-    mvn source:jar
     mvn release:prepare -Darguments=-Dgpg.passphrase="My\ passphrase"
     mvn release:perform -Darguments=""
     
