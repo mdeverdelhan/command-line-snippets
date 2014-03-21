@@ -13,6 +13,12 @@ The following is a collection of useful command line snippets that I use regular
 
     pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
 
+### File management
+
+#### Find duplicate files (asking for deletion)
+
+    fdupes -r ~/dir1 ~/dir2 -d
+
 ### Software development
 
 #### Release with Maven
