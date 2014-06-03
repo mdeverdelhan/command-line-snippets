@@ -69,3 +69,11 @@ echo -ne '\xaa\xbb\x06\x00\xff\xff\x06\x01\x64\x63' > /dev/ttyUSB0
 apt-get install jpnevulator
 jpnevulator --ascii --timing-print --tty "/dev/ttyUSB0" --read
 ```
+
+##### Change a network interface MAC address
+
+```bash
+ifconfig wlan0 down
+macchanger -A wlan0
+ifconfig wlan0 up
+```
