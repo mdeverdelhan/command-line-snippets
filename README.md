@@ -25,6 +25,12 @@ pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
 fdupes -r ~/dir1 ~/dir2 -d
 ```
 
+#### Recursively rename all file extensions to lower case
+
+```bash
+find . -type f | sed 's/\(.*\/\)\(.*\)/mv "\1\2" "\1\L\2"/' |sh
+```
+
 ### Software development
 
 #### Release with Maven
