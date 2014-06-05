@@ -33,6 +33,12 @@ find . -type f | sed 's/\(.*\/\)\(.*\)/mv "\1\2" "\1\L\2"/' |sh
 
 ### Software development
 
+#### Search all .java files for a string
+
+```bash
+find . -name "*.java" -print | xargs grep "exampleOfString"
+```
+
 #### Release with Maven
 
 ```bash
