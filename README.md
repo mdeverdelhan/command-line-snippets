@@ -67,6 +67,14 @@ ffmpeg -i movie.mts -vcodec libx264 -crf 23 -acodec libmp3lame -ac 2 -ab 192k -s
 mplayer -vo caca movie.avi
 ```
 
+### Web
+
+##### Download all pdfs from given url
+
+```bash
+wget -r -A '*.pdf' url/path
+```
+
 ### Miscellaneous
 
 #####  Send a command to a serial/USB port
