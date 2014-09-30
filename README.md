@@ -97,3 +97,9 @@ ifconfig wlan0 down
 macchanger -A wlan0
 ifconfig wlan0 up
 ```
+
+##### Generate a random number between 1024 and 4096
+
+```bash
+shuf -i 1024-4096 -n 1
+```
