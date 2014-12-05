@@ -2,6 +2,13 @@
 
 The following is a collection of useful command line snippets that I use regularly.
 
+  * [PDF modification](#pdf-modification)
+  * [Text edition](#text-edition)
+  * [File management](#file-management)
+  * [Software development](#software-development)
+  * [Video](#video)
+  * [Web](#web)
+  * [Miscellaneous](#miscellaneous)
 
 ### PDF modification
 
