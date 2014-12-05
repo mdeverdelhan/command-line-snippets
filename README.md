@@ -17,6 +17,14 @@ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=full.pdf page1.pdf page2.
 pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
 ```
 
+### Text edition
+
+#### Insert a header at the top of a text file
+
+```bash
+sed -i -e "1i Here\nIs\nMy\nHeader\n" file.txt
+```
+
 ### File management
 
 #### Find duplicate files (asking for deletion)
