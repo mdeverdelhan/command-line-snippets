@@ -10,21 +10,21 @@ The following is a collection of useful command line snippets that I use regular
   * [Web](#web)
   * [Miscellaneous](#miscellaneous)
 
-### PDF modification
+## PDF modification
 
 ##### Merge multiple PDF files
 
 ```bash
 gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=full.pdf page1.pdf page2.pdf page3.pdf
 ```
-    
+
 ##### Trim PDF margins
 
 ```bash
 pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
 ```
 
-### Text edition
+## Text edition
 
 #### Insert a header at the top of a text file
 
@@ -32,7 +32,7 @@ pdfjam –suffix out –trim '6.5cm 4.5cm 6.5cm 4.5cm' – source.pdf
 sed -i -e "1i Here\nIs\nMy\nHeader\n" file.txt
 ```
 
-### File management
+## File management
 
 #### Find duplicate files (asking for deletion)
 
@@ -46,7 +46,7 @@ fdupes -r ~/dir1 ~/dir2 -d
 find . -type f | sed 's/\(.*\/\)\(.*\)/mv "\1\2" "\1\L\2"/' |sh
 ```
 
-### Software development
+## Software development
 
 #### Search all .java files for a string
 
@@ -62,7 +62,7 @@ mvn release:prepare -Darguments=-Dgpg.passphrase="My\ passphrase"
 mvn release:perform -Darguments=""
 ```
 
-### Video
+## Video
 
 ##### Convert .ogv files to .avi files
 
@@ -82,7 +82,7 @@ ffmpeg -i movie.mts -vcodec libx264 -crf 23 -acodec libmp3lame -ac 2 -ab 192k -s
 mplayer -vo caca movie.avi
 ```
 
-### Web
+## Web
 
 ##### Download all pdfs from given url
 
@@ -90,7 +90,7 @@ mplayer -vo caca movie.avi
 wget -r -A '*.pdf' url/path
 ```
 
-### Miscellaneous
+## Miscellaneous
 
 #####  Send a command to a serial/USB port
 
