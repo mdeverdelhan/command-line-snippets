@@ -34,6 +34,12 @@ sed -i -e "1i Here\nIs\nMy\nHeader\n" file.txt
 
 ## File management
 
+#### Delete all files that end with tilde
+
+```bash
+find . -type f -name '*~' -exec rm -f '{}' \;
+```
+
 #### Find duplicate files (asking for deletion)
 
 ```bash
