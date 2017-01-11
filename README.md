@@ -6,6 +6,7 @@ The following is a collection of useful command line snippets that I use regular
   * [Text edition](#text-edition)
   * [File management](#file-management)
   * [Software development](#software-development)
+  * [Network](#network)
   * [Video](#video)
   * [Web](#web)
   * [Miscellaneous](#miscellaneous)
@@ -68,6 +69,25 @@ mvn release:prepare -Darguments=-Dgpg.passphrase="My\ passphrase"
 mvn release:perform -Darguments=""
 ```
 
+## Network
+
+##### Change a network interface MAC address
+
+```bash
+ifconfig wlan0 down
+macchanger -A wlan0
+ifconfig wlan0 up
+```
+
+##### Measure TCP bandwidth performance
+
+```bash
+# On server station (ip=192.168.1.10)
+iperf -s -f m
+# On client station
+iperf -c 192.168.1.10 -f m
+```
+
 ## Video
 
 ##### Convert .ogv files to .avi files
@@ -109,14 +129,6 @@ echo -ne '\xaa\xbb\x06\x00\xff\xff\x06\x01\x64\x63' > /dev/ttyUSB0
 ```bash
 apt-get install jpnevulator
 jpnevulator --ascii --timing-print --tty "/dev/ttyUSB0" --read
-```
-
-##### Change a network interface MAC address
-
-```bash
-ifconfig wlan0 down
-macchanger -A wlan0
-ifconfig wlan0 up
 ```
 
 ##### Generate a random number between 1024 and 4096
