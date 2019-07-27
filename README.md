@@ -91,6 +91,12 @@ iperf -c 192.168.1.10 -f m
 
 ## Photos
 
+##### Adjust time stored in the EXIF data by 30 minutes forward for all .jpg files
+
+```bash
+jhead -ta+0:30 *.jpg
+```
+
 ##### Rename all .jpg photos to \<date\>\_\<time\>.jpg (with date & time from EXIF data)
 
 ```bash
