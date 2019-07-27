@@ -7,6 +7,7 @@ The following is a collection of useful command line snippets that I use regular
   * [File management](#file-management)
   * [Software development](#software-development)
   * [Network](#network)
+  * [Photos](#photos)
   * [Video](#video)
   * [Web](#web)
   * [Miscellaneous](#miscellaneous)
@@ -86,6 +87,14 @@ ifconfig wlan0 up
 iperf -s -f m
 # On client station
 iperf -c 192.168.1.10 -f m
+```
+
+## Photos
+
+##### Rename all .jpg photos to \<date\>\_\<time\>.jpg (with date & time from EXIF data)
+
+```bash
+exiv2 rename *.jpg
 ```
 
 ## Video
