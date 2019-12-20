@@ -20,6 +20,12 @@ The following is a collection of useful command line snippets that I use regular
 gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=full.pdf page1.pdf page2.pdf page3.pdf
 ```
 
+##### Split a multipage PDF file
+
+```bash
+gs -sDEVICE=pdfwrite -dSAFER -o p%d.pdf multipage.pdf
+```
+
 ##### Trim PDF margins
 
 ```bash
