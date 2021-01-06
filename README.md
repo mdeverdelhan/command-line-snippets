@@ -10,6 +10,7 @@ The following is a collection of useful command line snippets that I use regular
   * [Photos](#photos)
   * [Video](#video)
   * [Web](#web)
+  * [Pro](#pro)
   * [Miscellaneous](#miscellaneous)
 
 ## PDF modification
@@ -135,6 +136,17 @@ mplayer -vo caca movie.avi
 
 ```bash
 wget -r -A '*.pdf' url/path
+```
+
+## Pro
+
+##### Pulse Secure connection/disconnection
+
+```bash
+# Pulse Secure connection
+"/path/to/Pulse Secure/Integration/pulselauncher.exe" -url "https://a.pulse.secure/url" -u "a_username" -p "a_password" -r "DOMAIN"'
+# Pulse Secure disconnection
+"/path/to/Pulse Secure/Integration/pulselauncher.exe" -signout -url "https://a.pulse.secure/url"
 ```
 
 ## Miscellaneous
