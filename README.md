@@ -144,7 +144,7 @@ wget -r -A '*.pdf' url/path
 
 ```bash
 # Pulse Secure connection
-"/path/to/Pulse Secure/Integration/pulselauncher.exe" -url "https://a.pulse.secure/url" -u "a_username" -p "a_password" -r "DOMAIN"'
+"/path/to/Pulse Secure/Integration/pulselauncher.exe" -url "https://a.pulse.secure/url" -u "a_username" -p "a_password" -r "DOMAIN"
 # Pulse Secure disconnection
 "/path/to/Pulse Secure/Integration/pulselauncher.exe" -signout -url "https://a.pulse.secure/url"
 ```
