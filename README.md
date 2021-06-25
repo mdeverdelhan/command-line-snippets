@@ -27,6 +27,12 @@ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=full.pdf page1.pdf page2.
 gs -sDEVICE=pdfwrite -dSAFER -o p%d.pdf multipage.pdf
 ```
 
+##### Extract pages from a PDF file
+
+```bash
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=1 -dLastPage=12 -sOutputFile=outfile_p1-p12.pdf original_input.pdf
+```
+
 ##### Trim PDF margins
 
 ```bash
